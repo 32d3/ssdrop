@@ -11,7 +11,7 @@ function buildSecureMessage() {
   });
   return secureMessage;
 }
-
+//
 function isFormValid() {
   var isValid = true;
   if (!/(.+)@(.+){2,}\.(.+){2,}/.test($("#email").val())) {
