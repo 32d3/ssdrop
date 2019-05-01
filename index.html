@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Dropzone</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://app.sendsafely.com/js/external/SendSafelyDropzone.js" type="text/javascript">
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+
+<body>
+  <div align="Center">
+    <IMG style="height:61px;margin-top:20px;margin-bottom:10px;" SRC="https://images.ctfassets.net/e4m0suk6oqie/4pjQ2ziZpSMswwcgwoKOeY/7352f477aa1046f0abcdb1a9c32677bf/welogo_black.png"><br>
+    <H2>Identity Verification Form</H2>
+  </div><br>
+  <div class="card" style="padding:20px; margin:auto; max-width:440px">
+    <form id="dropzone_form" name="dropzone_form">
+      <div class="form-group">
+        <label for="name">Account Number</label> <input class="form-control" id="name" name="name" placeholder="Enter your account number" type="text">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label> <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="secure_ssn">Taxpayer Identification Number</label> <span class="badge badge-pill badge-info" style="font-size:8px; margin-left:8px;">ENCRYPTED</span> <input class="form-control" id="secure_ssn" name="secure_ssn" placeholder="Enter your Tax ID Number (text will be encrypted)"
+          type="text">
+      </div>
+      <!-- <div class="form-group">
+        <label for="secure_dob">Date of Birth</label> <span class="badge badge-pill badge-info" style="font-size:8px; margin-left:8px;">ENCRYPTED</span> <input class="form-control" id="secure_dob" name="secure_dob" placeholder="Enter your Date of Birth (text will be encrypted)"
+          type="text">
+      </div>
+      <div class="form-group">
+        <label>Photo ID (scan or photograph)</label> <span class="badge badge-pill badge-info" style="font-size:8px; margin-left:8px;">ENCRYPTED</span>
+        <div id="dropzone-placeholder-div"></div>
+      </div> -->
+      <div align="center">
+        <button class="btn btn-primary" id="sendsafely-submit" onclick="submitForm()" type="button">Submit <i class="fas fa-spinner fa-spin" id="spinner" style="display:none; margin-left:5px;"></i></button>
+      </div>
+    </form>
+    <div id="submit_done" style="padding:10px; display:none">
+      <br>
+      <div align="center">
+        <i style="color:green; font-size:84px;" class="fas fa-check-circle"></i> </div><br><br>
+      <div align="center">
+        <b>Thank you. A member of our team will reach out to you once we have reviewed your information.</b><br>
+        <br>
+
+        <br>Your submission ID# is <span id="dropzone-thread-id">N/A</span><br>
+        <br>
+
+      </div>
+
+      <br>
+    </div>
+  </div>
+    <div style="padding:50px" align="center"><IMG height="40" width="181" src="https://sendsafely.s3.amazonaws.com/images/secured_with_sendsafely_181x40.png"></div> 
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
